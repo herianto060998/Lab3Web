@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown dan Listbox</title>
+</head>
+<body>
+    
+    <h1>Form Pembelian Motor</h1>
+   
+    <form action="proses.php" method="post">
+        <fieldset> 
+            <legend> Data Pembelian Motor</legend>
+            <p>
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" name="nama">
+            </p>
+            <p>
+                <label for="alamat">Alamat</label>
+                <textarea id="alamat" name="alamat" cols="35" rows="2"></textarea>
+            </p>
+            <p>
+                <label for="telepon">No.Telepon</label>
+                <input type="text" id="telepon" nama="telepon">
+            </p>
+            <p> 
+                <label for="motorcyle">Nama Motor</label>
+                    <select name="motor">
+                        <option value="" selected="seklected" >--Pilih Motor</option>
+                        <option value="nmax">Nmax 155</option>
+                        <option value="xsr">XSR 150</option>
+                        <option value="mxking">JupiterMx</option>
+                        <option value="r15">R15</option>
+                        <option value="xmax">Xmax</option>
+                    </select>
+            </p>
+    </form>
+    <form action="proses.php" method="post">
+        <p>
+            <label for="jenis">Jenis Motor</label>
+                <select name="jenis">
+                    <option value="", selected="selected" >--Pili Jenis</option>
+                    <option value="sport">Sport</option>
+                    <option value="matic">Matic</option>
+                    <option value="naked">Naked</option>
+                    <option value="moped">Moped</option>
+                </select>
+        </p>
+    </form>
+    <form>
+        <p><input type="submit" value="Kirim"></p>
+        <style>
+            form p > label {
+                display: inline-block;
+                width: 100px;
+            }
+            form input [type="text"], form textarea {
+                border: 1px solid #7a197a;
+            }
+            form input[type="submit"] {
+                border: 1px solid #b07fb0;
+                background-color: #ff0202;
+                color: black;
+                font-weight: bold;
+                padding: 5px 15px;
+                }
+         </style>
+    </form>
+    </fieldset>
+
+</body>
+</html>
+    
